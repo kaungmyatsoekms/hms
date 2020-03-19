@@ -3,12 +3,12 @@
 from odoo import models, fields, api
 
 
-# class hotel(models.Model):
-#     _name = 'hotel.hotel'
-#     _description = 'hotel.hotel'
+class hotel(models.Model):
+    _name = 'hotel.hotel'
+    _description = 'hotel.hotel'
 
-#     name = fields.Char()
-#     value = fields.Integer()
+    name = fields.Char()
+    value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
 #
@@ -17,25 +17,25 @@ from odoo import models, fields, api
 #         for record in self:
 #             record.value2 = float(record.value) / 100
 
-class Property(models.Model):
-    _name = 'property.property'
-    _description = 'propert property'
+# class Property(models.Model):
+#     _name = 'property.property'
+#     _description = 'propert property'
 
-    property_code = fields.Char()
-    property_name = fields.Char()
-    address1 = fields.Char()
-    address2 = fields.Char()
-    address3 = fields.Char()
-    country_id = fields.Char()
-    state_id = fields.char()
-    city_id = fields.Char()
-    telephone = fields.Char()
-    fax = fields.Char()
-    email = fields.Char()
-    website = fields.Char()
-    social_media_links = fields.Char()
-    no_of_room = fields.Integer(size=4)
-    proprety_license = fields.Char()
-    property_rating = fields.Char()
-    property_logo = fields.binary()
-    property_photo = fields.binary()
+#     property_code = fields.Char()
+#     property_name = fields.Char()
+#     address1 = fields.Char()
+#     address2 = fields.Char()
+#     address3 = fields.Char()
+#     country_id = fields.Char()
+#     state_id = fields.char()
+#     city_id = fields.Char()
+#     telephone = fields.Char()
+#     fax = fields.Char()
+#     email = fields.Char()
+#     website = fields.Char()
+#     social_media_links = fields.Char()
+#     no_of_room = fields.Integer(size=4)
+#     proprety_license = fields.Char()
+#     property_rating = fields.Char()
+#     property_logo = fields.binary()
+#     property_photo = fields.binary()

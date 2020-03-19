@@ -2,106 +2,84 @@
   <data>
     <!-- explicit list view definition -->
 
-    <!-- <record id="view_hotel_form" model="ir.ui.view" >
-      <field name="name">hotel list</field>
-      <field name="model">hotel.hotel</field>
-      <field name="arch" type="xml">
-        <form>
-          <sheet>
-            <group>
-              <field name="name"/>
-              <field name="value"/>
-            </group>
-          </sheet>
-        </form>
-      </field>
-    </record> -->
+    <record id="view_hotel_form" model="ir.ui.view" >
+        <field name="name">hotel list</field>
+        <field name="model">hotel.hotel</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="value"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
 
 
-    <!-- actions opening views on models -->
 
-    <!-- <record id="action_hotel" model="ir.actions.act_window" >
+    <record id="action_hotel" model="ir.actions.act_window" >
       <field name="name">hotel window</field>
       <field name="res_model">hotel.hotel</field>
       <field name="view_mode">tree,form</field>
-    </record> -->
-
-
-    <!-- server action to the one above -->
-<!--
-    <record model="ir.actions.server" id="hotel.action_server">
-      <field name="name">hotel server</field>
-      <field name="model_id" ref="model_hotel_hotel"/>
-      <field name="state">code</field>
-      <field name="code">
-        action = {
-          "type": "ir.actions.act_window",
-          "view_mode": "tree,form",
-          "res_model": model._name,
-        }
-      </field>
     </record>
--->
 
-    <!-- Top menu item -->
 
-    <!-- <menuitem name="hotel" id="hotel_menu"/> -->
+    
 
-    <!-- menu categories -->
+    
 
-    <!-- <menuitem name="Menu 1" id="hotel_menu1" parent="hotel_menu"/> -->
-<!--
-    <menuitem name="Menu 2" id="hotel.menu_2" parent="hotel.menu_root"/>
--->
-    <!-- actions -->
+    <menuitem name="hotel" id="hotel_menu"/>
 
-    <!-- <menuitem name="List" id="hotel_menu_list" parent="hotel_menu1"
-              action="action_hotel"/> -->
-<!--
-    <menuitem name="Server to list" id="hotel" parent="hotel.menu_2"
-              action="hotel.action_server"/>
--->
 
-<record id = "view_property_form" model = "ir.ui.view">
-            <field name = "name">property.form</field>
-            <field name = "model">property.property</field>
-            <field name = "arch" type = "xml">
-                <form String = "Hotel">
-                    <sheet>
-                        <group>
-                            <field name = "code" String = "Code"/>
-                            <field name = "name" String = "Name"/>
-                            <field name = "address1" String = "Address1"/>
-                            <field name = "address2" String = "Address2"/>
-                            <field name = "address3" String = "Address3"/>
-                            <field name = "country_id" String = "Country"/>
-                            <field name = "state_id" String = "State"/>
-                            <field name = "city_id" String = "City"/>
-                            <field name = "telephone" String = "Telephone"/>
-                            <field name = "fax" String = "Fax"/>
-                            <field name = "email" String = "Email"/>
-                            <field name = "website" String = "Website"/>
-                            <field name = "social_media_links" String = "Social Media"/>
-                            <field name = "no_of_room" String = "Number of Rooms"/>
-                            <field name = "proprety_license" String = "License"/>
-                            <field name = "property_rating" String = "Rating"/>
-                            <field name = "property_logo" String = "Hotel Logo"/>
-                            <field name = "property_photo" String = "Hotel Photo"/>
-                        </group>
-                    </sheet>
-                </form>
-            </field>
-        </record>
+    <menuitem name="Menu 1" id="hotel_menu1" parent="hotel_menu"/>
 
-        <record id = "open_property_form" model = "ir.actions.act_window">
-            <field name = "name">action_property</field>
-            <field name = "res_model">property.property</field>
-            <field name = "view_mode">tree,form</field>
-        </record>
+    
+    <menuitem name="List" id="hotel_menu_list" parent="hotel_menu1"
+              action="action_hotel"/>
 
-        <menuitem id = "property_menu" name = "Hotel"/>
+
+    <!-- <record id = "view_property_form" model = "ir.ui.view">
+        <field name = "name">property.form</field>
+        <field name = "model">property.property</field>
+        <field name = "arch" type = "xml">
+            <form String = "Hotel">
+                <sheet>
+                    <group>
+                        <field name = "code" String = "Code"/>
+                        <field name = "name" String = "Name"/>
+                        <field name = "address1" String = "Address1"/>
+                        <field name = "address2" String = "Address2"/>
+                        <field name = "address3" String = "Address3"/>
+                        <field name = "country_id" String = "Country"/>
+                        <field name = "state_id" String = "State"/>
+                        <field name = "city_id" String = "City"/>
+                        <field name = "telephone" String = "Telephone"/>
+                        <field name = "fax" String = "Fax"/>
+                        <field name = "email" String = "Email"/>
+                        <field name = "website" String = "Website"/>
+                        <field name = "social_media_links" String = "Social Media"/>
+                        <field name = "no_of_room" String = "Number of Rooms"/>
+                        <field name = "proprety_license" String = "License"/>
+                        <field name = "property_rating" String = "Rating"/>
+                        <field name = "property_logo" String = "Hotel Logo"/>
+                        <field name = "property_photo" String = "Hotel Photo"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id = "open_property_form" model = "ir.actions.act_window">
+        <field name = "name">action_property</field>
+        <field name = "res_model">property.property</field>
+        <field name = "view_mode">tree,form</field>
+    </record>
+
+    <menuitem id = "property_menu" name = "Hotel"/>
         
-        <menuitem id = "property_management_menu" parent = "property_menu" name = "Setup Hotel" action = "open_property_form"/>
-        
+    <menuitem id = "property_management_menu" parent = "property_menu" name = "Setup Hotel" action = "open_property_form"/> -->
+
   </data>
 </odoo>
