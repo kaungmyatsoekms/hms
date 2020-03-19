@@ -10,12 +10,12 @@ class hotel(models.Model):
     name = fields.Char()
     value = fields.Integer()
 
-class HotelFloor(models.Model):
-    _name = 'hotel.floor'
-    _description = 'hotel.floor'
+# class HotelFloor(models.Model):
+#     _name = 'hotel.floor'
+#     _description = 'hotel.floor'
 
-    name = fields.Char()
-    floor_number = fields.Char()
+#     name = fields.Char()
+#     floor_number = fields.Char()
 
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
