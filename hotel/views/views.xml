@@ -53,8 +53,14 @@
                 </sheet>
             </form>
         </field>
-
     </record>
+
+    <record id = "action_hotel_floor_form" model = "ir.actions.act_window"/>
+        <field name = "name">action_floor</field>
+        <field name = "res_model">hotel.floor</field>
+        <field name = "view_mode">tree,form</field>
+
+    <menuitem name = "Floor" id = "hotel_floor_menu" parent = "hotel_menu" action = "action_hotel_floor_form"/>
 
 
 
