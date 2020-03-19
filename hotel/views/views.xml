@@ -26,9 +26,6 @@
     </record>
 
 
-    
-
-    
 
     <menuitem name="hotel" id="hotel_menu"/>
 
@@ -40,7 +37,7 @@
               action="action_hotel"/>
 
     <!-- ======floor form view======= -->
-    <record id="view_hotel_floor_form" model="ir.ui.view" >
+    <!-- <record id="view_hotel_floor_form" model="ir.ui.view" >
         <field name="name">Hotel Floor</field>
         <field name="model">hotel.floor</field>
         <field name="arch" type = "xml">
@@ -60,7 +57,7 @@
         <field name="res_model">hotel.floor</field>
         <field name="view_mode">tree,form</field>
 
-    <menuitem name="Floor" id="hotel_floor_menu" parent="hotel_menu" action="action_hotel_floor_form"/>
+    <menuitem name="Floor" id="hotel_floor_menu" parent="hotel_menu" action="action_hotel_floor_form"/> -->
 
 
 
