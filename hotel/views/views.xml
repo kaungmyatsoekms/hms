@@ -36,11 +36,10 @@
     <menuitem name="List" id="hotel_menu_list" parent="hotel_menu1"
               action="action_hotel"/>
 
-    <!-- ======floor form view======= -->
-    <!-- <record id="view_hotel_floor_form" model="ir.ui.view" >
-        <field name="name">Hotel Floor</field>
+    <record id="view_hotel_floor_form" model="ir.ui.view" >
+        <field name="name">Floor</field>
         <field name="model">hotel.floor</field>
-        <field name="arch" type = "xml">
+        <field name="arch" type="xml">
             <form>
                 <sheet>
                     <group>
@@ -52,12 +51,13 @@
         </field>
     </record>
 
-    <record id = "action_hotel_floor_form" model = "ir.actions.act_window"/>
-        <field name="name">action_floor</field>
-        <field name="res_model">hotel.floor</field>
-        <field name="view_mode">tree,form</field>
+    <record id="action_hotel_floor" model="ir.actions.act_window" >
+      <field name="name">Floor</field>
+      <field name="res_model">hotel.floor</field>
+      <field name="view_mode">tree,form</field>
+    </record>
 
-    <menuitem name="Floor" id="hotel_floor_menu" parent="hotel_menu" action="action_hotel_floor_form"/> -->
+    <menuitem name="Floor" id="hotel_floor_menu" parent="hotel_menu" action="action_hotel_floor"/>
 
 
 
