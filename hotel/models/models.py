@@ -3,12 +3,12 @@
 from odoo import models, fields, api
 
 
-class hotel(models.Model):
-    _name = 'hotel.hotel'
-    _description = 'hotel.hotel'
+# class hotel(models.Model):
+#     _name = 'hotel.hotel'
+#     _description = 'hotel.hotel'
 
-    name = fields.Char()
-    value = fields.Integer()
+#     name = fields.Char()
+#     value = fields.Integer()
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
 #
@@ -17,7 +17,7 @@ class hotel(models.Model):
 #         for record in self:
 #             record.value2 = float(record.value) / 100
 
-class property(models.Model):
+class Property(models.Model):
     _name = 'property.property'
     _description = 'propert property'
 
