@@ -33,14 +33,14 @@
     <menuitem name="hotel" id="hotel_menu"/>
 
 
-    <menuitem name="Menu 1" id="hotel_menu1" parent="hotel_menu"/>
+    <menuitem name="Menu" id="hotel_menu1" parent="hotel_menu"/>
 
     
     <menuitem name="List" id="hotel_menu_list" parent="hotel_menu1"
               action="action_hotel"/>
 
-    <!-- ======floor form view=======
-    <record id = "view_hotel_floor_form" model = "ir.ui.view" >
+    <!-- ======floor form view======= -->
+    <!-- <record id = "view_hotel_floor_form" model = "ir.ui.view" >
         <field name = "name">Hotel Floor</field>
         <field name = "model">hotel.floor</field>
         <field name = "arch" type = "xml">
