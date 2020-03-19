@@ -1,28 +1,31 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-<!--
-    <record model="ir.ui.view" id="hotel.list">
+
+    <record id="view_hotel_form" model="ir.ui.view" >
       <field name="name">hotel list</field>
       <field name="model">hotel.hotel</field>
       <field name="arch" type="xml">
-        <tree>
-          <field name="name"/>
-          <field name="value"/>
-          <field name="value2"/>
-        </tree>
+        <form>
+          <sheet>
+            <group>
+              <field name="name"/>
+              <field name="value"/>
+            </group>
+          </sheet>
+        </form>
       </field>
     </record>
--->
+
 
     <!-- actions opening views on models -->
-<!--
-    <record model="ir.actions.act_window" id="hotel.action_window">
+
+    <record id="action_hotel" model="ir.actions.act_window" >
       <field name="name">hotel window</field>
       <field name="res_model">hotel.hotel</field>
       <field name="view_mode">tree,form</field>
     </record>
--->
+
 
     <!-- server action to the one above -->
 <!--
@@ -41,18 +44,20 @@
 -->
 
     <!-- Top menu item -->
-<!--
-    <menuitem name="hotel" id="hotel.menu_root"/>
--->
+
+    <menuitem name="hotel" id="hotel_menu"/>
+
     <!-- menu categories -->
+
+    <menuitem name="Menu 1" id="hotel_menu1" parent="hotel_menu"/>
 <!--
-    <menuitem name="Menu 1" id="hotel.menu_1" parent="hotel.menu_root"/>
     <menuitem name="Menu 2" id="hotel.menu_2" parent="hotel.menu_root"/>
 -->
     <!-- actions -->
+
+    <menuitem name="List" id="hotel_menu_list" parent="hotel_menu1"
+              action="action_hotel"/>
 <!--
-    <menuitem name="List" id="hotel.menu_1_list" parent="hotel.menu_1"
-              action="hotel.action_window"/>
     <menuitem name="Server to list" id="hotel" parent="hotel.menu_2"
               action="hotel.action_server"/>
 -->
