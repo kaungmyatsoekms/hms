@@ -35,7 +35,7 @@
     
     <menuitem name="List" id="hotel_menu_list" parent="hotel_menu1"
               action="action_hotel"/>
-
+    <!-- =========hotel floor========= -->
     <record id="view_hotel_floor_form" model="ir.ui.view" >
         <field name="name">Floor</field>
         <field name="model">hotel.floor</field>
@@ -60,6 +60,40 @@
     </record>
 
     <menuitem name="Floor" id="hotel_floor_menu" parent="hotel_menu" action="action_hotel_floor"/>
+
+    <!-- =========hotel room========= -->
+    <record id="view_hotel_room_form" model="ir.ui.view" >
+        <field name="name">Room</field>
+        <field name="model">hotel.room</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="room_no"/>
+                        <field name="roomtypemap_code"/>
+                        <field name="roomview_code" />
+                        <field name="roommap_code" />
+                        <field name="room_bedtype"/>
+                        <field name="room_ratecode" />
+                        <field name="room_facilitycode" />
+                        <field name="room_size" />
+                        <field name="room_extension" />
+                        <field name="room_image" />
+                        <field name="room_description" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_hotel_room" model="ir.actions.act_window" >
+      <field name="name">Room</field>
+      <field name="res_model">hotel.room</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Room" id="hotel_room_menu" parent="hotel_menu" action="action_hotel_room"/>
+
 
 
 
