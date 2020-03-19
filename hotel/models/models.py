@@ -16,6 +16,8 @@ class HotelFloor(models.Model):
 
     name = fields.Char()
     floor_number = fields.Char()
+    no_of_room = fields.Char()
+    building_id = fields.Char()
 
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()

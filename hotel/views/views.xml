@@ -45,6 +45,8 @@
                     <group>
                         <field name="name"/>
                         <field name="floor_number"/>
+                        <field name="no_of_room" String = "Number of Room"/>
+                        <field name="building_id" String = "Building"/>
                     </group>
                 </sheet>
             </form>
