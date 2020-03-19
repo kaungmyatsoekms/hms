@@ -9,6 +9,14 @@ class hotel(models.Model):
 
     name = fields.Char()
     value = fields.Integer()
+
+class HotelFloor(models.Model):
+    _name = 'hotel.floor'
+    _description = 'hotel.floor'
+
+    name = fields.Char()
+    floor_number = fields.Char()
+
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
 #
@@ -19,7 +27,7 @@ class hotel(models.Model):
 
 # class Property(models.Model):
 #     _name = 'property.property'
-#     _description = 'propert property'
+#     _description = 'property property'
 
 #     property_code = fields.Char()
 #     property_name = fields.Char()
