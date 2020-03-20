@@ -43,6 +43,7 @@
             <field name="view_mode">tree,form</field>
         </record>
 
+        
         <menuitem id="room_menu" name="Room" parent="configuration_menu" sequence="2"/>
         <menuitem id="room_type_config_menu" name="Room Type" parent="room_menu" action="room_type_action_window"/>
     </data>

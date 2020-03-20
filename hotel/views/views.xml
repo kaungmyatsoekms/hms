@@ -24,7 +24,7 @@
                             <page>
                                 <group>
                                     <group>
-                                        <label for="address" String = "Address"/>
+                                        <label for="address1" String = "Address"/>
                                         <div class="o_address_format">
                                             <field name="address1" placeholder="Street...." class="o_address_street"/>
                                             <field name="address2" placeholder="Street2..." class="o_address_street"/>
