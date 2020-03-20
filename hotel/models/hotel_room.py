@@ -13,3 +13,19 @@ class HotelRoomType(models.Model):
     roomtype_totalroom = fields.Integer(string="Total Room")
     roomtype_description = fields.Char(string="Description",required=True)
     roomtype_image = fields.Binary(string="Image")
+
+    class HotelRoom(models.Model):
+    _name = 'hotel.room'
+    _description = 'hotel.room'
+
+    room_no = fields.Char()
+    roomtypemap_code = fields.Char()
+    roomview_code = fields.Char()
+    roommap_code = fields.Char()
+    room_bedtype = fields.Char()
+    room_ratecode = fields.Char()
+    room_facilitycode = fields.Char()
+    room_size = fields.Char()
+    room_extension = fields.Char()
+    room_image = fields.Binary()
+    room_description = fields.Char()

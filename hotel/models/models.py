@@ -3,22 +3,9 @@
 from odoo import models, fields, api, tools
 
 
-class hotel(models.Model):
-    _name = 'hotel.hotel'
-    _description = 'hotel.hotel'
 
-    name = fields.Char()
-    value = fields.Integer()
 
-# class HotelBuilding(models.Model):
-#     _name = 'hotel.building'
-#     _description = 'hotel.building'
 
-#     building_code = fields.Char(string="Building Code", required=True)
-#     building_name = fields.Char(string="Building Name", required=True))
-#     building_type = fields.Char(string="Building Type")
-#     building_location = fields.Char(string="Location")
-#     building_description = fields.Char(string="Description")
 
 class HotelRoom(models.Model):
     _name = 'hotel.room'

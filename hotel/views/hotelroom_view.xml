@@ -46,5 +46,42 @@
         
         <menuitem id="room_menu" name="Room" parent="configuration_menu" sequence="2"/>
         <menuitem id="room_type_config_menu" name="Room Type" parent="room_menu" action="room_type_action_window"/>
+
+        <!-- =========hotel room========= -->
+        <record id="view_hotel_room_form" model="ir.ui.view" >
+            <field name="name">Room</field>
+            <field name="model">hotel.room</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <h2>Room Setup Form</h2>
+                        <br></br>
+
+                        <group>
+                            <field name="room_no"/>
+                            <field name="roomtypemap_code"/>
+                            <field name="roomview_code" />
+                            <field name="roommap_code" />
+                            <field name="room_bedtype"/>
+                            <field name="room_ratecode" />
+                            <field name="room_facilitycode" />
+                            <field name="room_size" />
+                            <field name="room_extension" />
+                            <field name="room_image" />
+                            <field name="room_description" />
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <!-- ==========Hotel Room Action========== -->
+        <record id="hotel_room_action_window" model="ir.actions.act_window" >
+            <field name="name">Room</field>
+            <field name="res_model">hotel.room</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <menuitem name="Room Configuration" id="hotel_room_menu" parent="configuration_menu" action="hotel_room_action_window" sequence="10"/>
+
     </data>
 </odoo>
