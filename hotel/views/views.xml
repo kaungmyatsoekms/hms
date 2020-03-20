@@ -71,7 +71,7 @@
 
 
     <!-- =========hotel room========= -->
-    <record id="view_hotel_room_form" model="ir.ui.view" >
+    <!-- <record id="view_hotel_room_form" model="ir.ui.view" >
         <field name="name">Room</field>
         <field name="model">hotel.room</field>
         <field name="arch" type="xml">
@@ -79,7 +79,7 @@
                 <sheet>
                     <h2>Room Setup Form</h2>
                     <br></br>
-                    
+
                     <group>
                         <field name="room_no"/>
                         <field name="roomtypemap_code"/>
@@ -96,15 +96,15 @@
                 </sheet>
             </form>
         </field>
-    </record>
+    </record> -->
     <!-- ==========Hotel Room Action========== -->
-    <record id="hotel_room_action_window" model="ir.actions.act_window" >
+    <!-- <record id="hotel_room_action_window" model="ir.actions.act_window" >
       <field name="name">Room</field>
       <field name="res_model">hotel.room</field>
       <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem name="Room Configuration" id="hotel_room_menu" parent="configuration_menu" action="hotel_room_action_window" sequence="10"/>
+    <menuitem name="Room Configuration" id="hotel_room_menu" parent="configuration_menu" action="hotel_room_action_window" sequence="10"/> -->
 
     <!-- <record id="view_hotel_form" model="ir.ui.view" >
         <field name="name">hotel list</field>
