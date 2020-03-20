@@ -10,6 +10,6 @@ class HotelRoomType(models.Model):
     roomtype_name = fields.Char(string="Name", required=True)
     roomtype_rate = fields.Integer(string="Rate", required=True)
     roomtype_bedqty = fields.Integer(string="Number of Bed", required=True)
-    roomtype_description = fields.Char(string="Description",required=True)
     roomtype_totalroom = fields.Integer(string="Total Room")
+    roomtype_description = fields.Char(string="Description",required=True)
     roomtype_image = fields.Binary(string="Image")
