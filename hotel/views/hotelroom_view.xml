@@ -38,7 +38,7 @@
         <!-- ==========Room Type Action========== -->
 
         <record id="room_type_action_window" model="ir.actions.act_window">
-            <field name="name">room.type.action</field>
+            <field name="name">Room Type</field>
             <field name="res_model">hotel.roomtype</field>
             <field name="view_mode">tree,form</field>
         </record>
