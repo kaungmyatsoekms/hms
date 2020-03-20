@@ -40,6 +40,10 @@
                                         <field name="sociallink" widget="url"/>
                                     </group>
                                     <group>
+                                        <field name="no_of_room"/>
+                                        <field name="property_license"/>
+                                        <field name="property_rating"/>
+                                        <field name="property_image" widget="image" class="float-left oe_avatar"/>
                                     </group>
                                 </group>
                             </page>
