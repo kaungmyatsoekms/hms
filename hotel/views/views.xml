@@ -63,7 +63,7 @@
 
     <menuitem id="hotel_configuration_menu" name="Configuration"  parent="hotel_menu" sequence="10"/>
 
-    <menuitem id="property_configuration_menu" name="Hotel Configuration" parent="hotel_configuration_menu"
+    <menuitem id="property_configuration_menu" name="Hotel Configuration" parent="hotel_menu"
     sequence="10" action="property_action_window"/>
 
     <!-- =========hotel room========= -->
