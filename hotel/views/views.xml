@@ -1,98 +1,6 @@
 <odoo>
   <data>
     <!-- explicit list view definition -->
-
-    <!-- <record id="view_hotel_form" model="ir.ui.view" >
-        <field name="name">hotel list</field>
-        <field name="model">hotel.hotel</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="value"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
-
-
-
-    <record id="action_hotel" model="ir.actions.act_window" >
-      <field name="name">hotel window</field>
-      <field name="res_model">hotel.hotel</field>
-      <field name="view_mode">tree,form</field>
-    </record> -->
-
-
-    <!-- ==========Main Menu========== -->
-    <menuitem name="Hotel" id="hotel_menu"/>
-
-    <menuitem name="Configuration" id="hotel_configuration_menu" parent="hotel_menu"/>
-
-    
-    <!-- <menuitem name="List" id="hotel_menu_list" parent="hotel_menu1"
-              action="action_hotel"/> -->
-    <!-- =========hotel floor========= -->
-    <!-- <record id="view_hotel_floor_form" model="ir.ui.view" >
-        <field name="name">Floor</field>
-        <field name="model">hotel.floor</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <field name="name"/>
-                        <field name="floor_number"/>
-                        <field name="no_of_room" String = "Number of Room"/>
-                        <field name="building_id" String = "Building"/>
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record> -->
-    <!-- ==========Hotel Floor Action========== -->
-    <!-- <record id="action_hotel_floor" model="ir.actions.act_window" >
-      <field name="name">Floor</field>
-      <field name="res_model">hotel.floor</field>
-      <field name="view_mode">tree,form</field>
-    </record>
-
-    <menuitem name="Floor" id="hotel_floor_menu" parent="hotel_menu" action="action_hotel_floor"/> -->
-
-    <!-- =========hotel room========= -->
-    <record id="view_hotel_room_form" model="ir.ui.view" >
-        <field name="name">Room</field>
-        <field name="model">hotel.room</field>
-        <field name="arch" type="xml">
-            <form>
-                <sheet>
-                    <group>
-                        <field name="room_no"/>
-                        <field name="roomtypemap_code"/>
-                        <field name="roomview_code" />
-                        <field name="roommap_code" />
-                        <field name="room_bedtype"/>
-                        <field name="room_ratecode" />
-                        <field name="room_facilitycode" />
-                        <field name="room_size" />
-                        <field name="room_extension" />
-                        <field name="room_image" />
-                        <field name="room_description" />
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
-    <!-- ==========Hotel Room Action========== -->
-    <record id="hotel_room_action_window" model="ir.actions.act_window" >
-      <field name="name">Room</field>
-      <field name="res_model">hotel.room</field>
-      <field name="view_mode">form</field>
-    </record>
-
-    <menuitem name="Room Configuration" id="hotel_room_menu" parent="hotel_configuration_menu" action="hotel_room_action_window"/>
-
     <!-- ==========Property Form View========== -->
     <record id="property_view_form" model="ir.ui.view">
         <field name="name">property.view.form</field>
@@ -150,7 +58,105 @@
       <field name="view_mode">form</field>
     </record>
 
-    <menuitem id="property_configuration_menu" name="Hotel Configuration" sequence="10" parent="hotel_configuration_menu" action="property_action_window"/>
+    <!-- ==========Main Menu========== -->
+    <menuitem name="Hotel" id="hotel_menu" sequence="5"/>
+
+    <menuitem id="hotel_configuration_menu" name="Configuration"  parent="hotel_menu" sequence="10"/>
+
+    <menuitem id="property_configuration_menu" name="Hotel Configuration" parent="hotel_configuration_menu"
+    sequence="10" action="property_action_window"/>
+
+    <!-- =========hotel room========= -->
+    <record id="view_hotel_room_form" model="ir.ui.view" >
+        <field name="name">Room</field>
+        <field name="model">hotel.room</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="room_no"/>
+                        <field name="roomtypemap_code"/>
+                        <field name="roomview_code" />
+                        <field name="roommap_code" />
+                        <field name="room_bedtype"/>
+                        <field name="room_ratecode" />
+                        <field name="room_facilitycode" />
+                        <field name="room_size" />
+                        <field name="room_extension" />
+                        <field name="room_image" />
+                        <field name="room_description" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <!-- ==========Hotel Room Action========== -->
+    <record id="hotel_room_action_window" model="ir.actions.act_window" >
+      <field name="name">Room</field>
+      <field name="res_model">hotel.room</field>
+      <field name="view_mode">form</field>
+    </record>
+
+    <menuitem name="Room Configuration" id="hotel_room_menu" parent="hotel_configuration_menu" action="hotel_room_action_window"/>
+
+    <!-- <record id="view_hotel_form" model="ir.ui.view" >
+        <field name="name">hotel list</field>
+        <field name="model">hotel.hotel</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="value"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+
+    <record id="action_hotel" model="ir.actions.act_window" >
+      <field name="name">hotel window</field>
+      <field name="res_model">hotel.hotel</field>
+      <field name="view_mode">tree,form</field>
+    </record> -->
+
+
+    
+
+    
+    <!-- <menuitem name="List" id="hotel_menu_list" parent="hotel_menu1"
+              action="action_hotel"/> -->
+    <!-- =========hotel floor========= -->
+    <!-- <record id="view_hotel_floor_form" model="ir.ui.view" >
+        <field name="name">Floor</field>
+        <field name="model">hotel.floor</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="floor_number"/>
+                        <field name="no_of_room" String = "Number of Room"/>
+                        <field name="building_id" String = "Building"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record> -->
+    <!-- ==========Hotel Floor Action========== -->
+    <!-- <record id="action_hotel_floor" model="ir.actions.act_window" >
+      <field name="name">Floor</field>
+      <field name="res_model">hotel.floor</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem name="Floor" id="hotel_floor_menu" parent="hotel_menu" action="action_hotel_floor"/> -->
+
+    
+
+    
 
 
 
