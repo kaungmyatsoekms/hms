@@ -59,16 +59,16 @@
     <record id="property_action_window" model="ir.actions.act_window">
       <field name="name">Hotel Property</field>
       <field name="res_model">property.property</field>
-      <field name="view_mode">form</field>
+      <field name="view_mode">tree,form</field>
     </record>
 
     <!-- ==========Main Menu========== -->
     <menuitem name="Hotel" id="hotel_menu" sequence="5"/>
 
-    <menuitem id="hotel_configuration_menu" name="Configuration"  parent="hotel_menu" sequence="10"/>
+    <menuitem id="configuration_menu" name="Configuration"  parent="hotel_menu" sequence="10"/>
 
-    <menuitem id="property_configuration_menu" name="Hotel Configuration" parent="hotel_menu"
-    sequence="10" action="property_action_window"/>
+    <menuitem name="Hotel Configuration" id="property_configuration_menu" parent="configuration_menu" action="property_action_window" sequence="10"/>
+
 
     <!-- =========hotel room========= -->
     <record id="view_hotel_room_form" model="ir.ui.view" >
@@ -98,10 +98,10 @@
     <record id="hotel_room_action_window" model="ir.actions.act_window" >
       <field name="name">Room</field>
       <field name="res_model">hotel.room</field>
-      <field name="view_mode">form</field>
+      <field name="view_mode">tree,form</field>
     </record>
 
-    <menuitem name="Room Configuration" id="hotel_room_menu" parent="hotel_configuration_menu" action="hotel_room_action_window" sequence="10"/>
+    <menuitem name="Room Configuration" id="hotel_room_menu" parent="configuration_menu" action="hotel_room_action_window" sequence="10"/>
 
     <!-- <record id="view_hotel_form" model="ir.ui.view" >
         <field name="name">hotel list</field>
