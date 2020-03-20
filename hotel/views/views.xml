@@ -24,7 +24,7 @@
                             <page>
                                 <group>
                                     <group>
-                                        <label for="address1" String = "Address"/>
+                                        <label for="address" String = "Address"/>
                                         <div class="o_address_format">
                                             <field name="address1" placeholder="Street...." class="o_address_street"/>
                                             <field name="address2" placeholder="Street2..." class="o_address_street"/>
@@ -77,6 +77,9 @@
         <field name="arch" type="xml">
             <form>
                 <sheet>
+                    <h2>Room Setup Form</h2>
+                    <br></br>
+                    
                     <group>
                         <field name="room_no"/>
                         <field name="roomtypemap_code"/>
