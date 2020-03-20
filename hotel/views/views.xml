@@ -97,7 +97,7 @@
       <field name="view_mode">form</field>
     </record>
 
-    <menuitem name="Room Configuration" id="hotel_room_menu" parent="hotel_configuration_menu" action="hotel_room_action_window"/>
+    <menuitem name="Room Configuration" id="hotel_room_menu" parent="hotel_configuration_menu" action="hotel_room_action_window" sequence="10"/>
 
     <!-- <record id="view_hotel_form" model="ir.ui.view" >
         <field name="name">hotel list</field>
