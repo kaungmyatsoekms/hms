@@ -7,21 +7,21 @@ from odoo import models, fields, api, tools
 
 
 
-class HotelRoom(models.Model):
-    _name = 'hotel.room'
-    _description = 'hotel.room'
+# class HotelRoom(models.Model):
+#     _name = 'hotel.room'
+#     _description = 'hotel.room'
 
-    room_no = fields.Char()
-    roomtypemap_code = fields.Char()
-    roomview_code = fields.Char()
-    roommap_code = fields.Char()
-    room_bedtype = fields.Char()
-    room_ratecode = fields.Char()
-    room_facilitycode = fields.Char()
-    room_size = fields.Char()
-    room_extension = fields.Char()
-    room_image = fields.Binary()
-    room_description = fields.Char()
+#     room_no = fields.Char()
+#     roomtypemap_code = fields.Char()
+#     roomview_code = fields.Char()
+#     roommap_code = fields.Char()
+#     room_bedtype = fields.Char()
+#     room_ratecode = fields.Char()
+#     room_facilitycode = fields.Char()
+#     room_size = fields.Char()
+#     room_extension = fields.Char()
+#     room_image = fields.Binary()
+#     room_description = fields.Char()
 
 #     value2 = fields.Float(compute="_value_pc", store=True)
 #     description = fields.Text()
