@@ -14,7 +14,7 @@ class HotelRoomType(models.Model):
     roomtype_description = fields.Char(string="Description",required=True)
     roomtype_image = fields.Binary(string="Image")
 
-    class HotelRoom(models.Model):
+class HotelRoom(models.Model):
     _name = 'hotel.room'
     _description = 'hotel.room'
 
