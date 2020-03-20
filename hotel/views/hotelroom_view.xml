@@ -35,7 +35,7 @@
             </field>
         </record>
 
-        <!-- ==========Room Type Action========== -->
+        <!-- ==========Room Type Action=========== -->
 
         <record id="room_type_action_window" model="ir.actions.act_window">
             <field name="name">Room Type</field>
