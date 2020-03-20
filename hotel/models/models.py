@@ -63,6 +63,6 @@ class Property(models.Model):
     sociallink = fields.Char(string='Social Media Link')
     no_of_room = fields.Integer(string='Total Number of Rooms')
     property_license = fields.Char(string='Property License')
-    property_rating = fields.Char('Property Rating')
+    property_rating = fields.Char(string ='Property Rating')
     property_logo = fields.Binary(string='Logo')
     property_image = fields.Binary(string='Image')
