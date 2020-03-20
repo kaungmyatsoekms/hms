@@ -150,7 +150,7 @@
       <field name="view_mode">form</field>
     </record>
 
-    <menuitem id="property_configuration_menu" name="Hotel Configuration" sequence="10" parent="hotel_configuration_menu" action="property_action_window"
+    <menuitem id="property_configuration_menu" name="Hotel Configuration" sequence="10" parent="hotel_configuration_menu" action="property_action_window"/>
 
 
 
