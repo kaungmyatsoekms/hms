@@ -8,7 +8,7 @@
         <field name="arch" type="xml">
             <form String="Property">
                 <sheet>
-                    <h2>Property Setup Form</h2>
+                    <h2>Hotel Setup Form</h2>
                     <br></br>
                     <field name="property_logo" placeholder="Logo" widget="image" class="oe_avatar"/>
                     <div class="oe_title">
@@ -87,6 +87,16 @@
             </form>
         </field>
     </record>
+
+    <!-- ==========Building Action========== -->
+    <record id="hotel_building_action_window" model="ir.actions.act_window">
+        <field name="name">Building</field>
+        <field name="res_model">hotel.building</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- ==========Building Menu========== -->
+    <menuitem id="building_menu" name="Building" parent="configuration_menu" action="hotel_building_action_window"/>
 
 
     
