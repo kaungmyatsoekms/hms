@@ -41,6 +41,15 @@ class HotelRoomView(models.Model):
     roomview_name = fields.Char()
     roomview_description = fields.Char()
 
+class HotelBedType(models.Model):
+    _name = 'hotel.bedtype'
+    _description = 'hotel.bedtype'
+    _rec_name = 'bedtype_name'
+    
+    bedtype_code = fields.Char()
+    bedtype_name = fields.Char()
+    bed_size = fields.Char()
+
 # class HotelRoomAmenitiesType(models.Model):
 #     _name = 'hotel.room.amenities.type'
 #     _description = 'amenities type'
