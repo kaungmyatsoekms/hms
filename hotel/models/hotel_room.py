@@ -18,6 +18,7 @@ class HotelRoomType(models.Model):
 class HotelRoom(models.Model):
     _name = 'hotel.room'
     _description = 'hotel.room'
+    _rec_name = 'roomview_name'
 
     room_no = fields.Char(string="Room No",required=True)
     roomtypemap_code = fields.Char()
