@@ -3,3 +3,4 @@ access_hotel_room,hotel_room,model_hotel_room,base.group_user,1,1,1,1
 access_property_property,property_property,model_property_property,base.group_user,1,1,1,1
 access_hotel_roomtype,hotel.roomtype,model_hotel_roomtype,base.group_user,1,1,1,1
 access_hotel_building,hotel_building,model_hotel_building,base.group_user,1,1,1,1
+access_hotel_roomview,hotel_roomview,model_hotel_roomview,base.group_user,1,1,1,1

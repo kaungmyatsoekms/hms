@@ -31,6 +31,14 @@ class HotelRoom(models.Model):
     room_image = fields.Binary()
     room_description = fields.Char()
 
+class HotelRoomView(models.Model):
+    _name='hotel.roomview'
+    _description = 'hotel.roomview'
+
+    roomview_code = fields.Char()
+    roomview_name = fields.Char()
+    roomview_description = fields.Char()
+
 # class HotelRoomAmenitiesType(models.Model):
 #     _name = 'hotel.room.amenities.type'
 #     _description = 'amenities type'
