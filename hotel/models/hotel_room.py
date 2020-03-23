@@ -21,7 +21,7 @@ class HotelRoom(models.Model):
 
     room_no = fields.Char(string="Room No",required=True)
     roomtypemap_code = fields.Char()
-    roomview = fields.Many2one('hotel.roomview','Category')
+    roomview_id = fields.Many2one('hotel.roomview','Room View')
     roommap_code = fields.Char()
     room_bedtype = fields.Char()
     room_ratecode = fields.Char()
@@ -36,7 +36,7 @@ class HotelRoomView(models.Model):
     _description = 'hotel.roomview'
 
     roomview_code = fields.Char()
-    roomview_name = fields.Char()
+    roomview_name = fields.One2many('hotel.room','roomview_id','View Name')
     roomview_description = fields.Char()
 
 # class HotelRoomAmenitiesType(models.Model):
