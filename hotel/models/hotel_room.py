@@ -47,7 +47,7 @@ class HotelBedType(models.Model):
     _rec_name = 'bedtype_name'
     
     bedtype_code = fields.Char()
-    bedtype_name = fields.Char()
+    bedtype_name = fields.Char(required=True)
     bed_size = fields.Char()
 
 # class HotelRoomAmenitiesType(models.Model):

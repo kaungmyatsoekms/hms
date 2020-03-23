@@ -4,3 +4,4 @@ access_property_property,property_property,model_property_property,base.group_us
 access_hotel_roomtype,hotel.roomtype,model_hotel_roomtype,base.group_user,1,1,1,1
 access_hotel_building,hotel_building,model_hotel_building,base.group_user,1,1,1,1
 access_hotel_roomview,hotel_roomview,model_hotel_roomview,base.group_user,1,1,1,1
+access_hotel_bedtype,hotel_bedtype,model_hotel_bedtype,bast.group_user,1,1,1,1
