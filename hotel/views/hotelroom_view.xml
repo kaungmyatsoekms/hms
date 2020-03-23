@@ -59,7 +59,7 @@
                         <group>
                             <field name="room_no"/>
                             <field name="roomtypemap_code"/>
-                            <field name="roomview" />
+                            <field name="roomview_id" />
                             <field name="roommap_code" />
                             <field name="room_bedtype"/>
                             <field name="room_ratecode" />
