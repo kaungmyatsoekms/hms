@@ -79,11 +79,11 @@
             <form String="Building">
                 <h2>Building Setup Form</h2>
                 <br></br>
-                <field name="building_code" placeholder="Code"/>
-                <field name="building_name"/>
-                <field name="building_type"/>
-                <field name="building_location"/>
-                <field name="building_description"/>
+                <field name="building_code" placeholder="Code" String="Building Code"/>
+                <field name="building_name" placeholder="Name" String="Building Name"/>
+                <field name="building_type" placeholder="Type" String="Building Type"/>
+                <field name="building_location" placeholder="Location" String="Location"/>
+                <field name="building_description" placeholder="Description" String="Description"/>
             </form>
         </field>
     </record>

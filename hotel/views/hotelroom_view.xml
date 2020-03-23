@@ -54,8 +54,8 @@
             <field name="arch" type="xml">
                 <form>
                     <sheet>
-                        <!-- <h2>Room Setup Form</h2>
-                        <br></br> -->
+                        <h2>Room Setup Form</h2>
+                        <br></br>
 
                         <group>
                             <field name="room_no"/>
