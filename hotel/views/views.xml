@@ -58,9 +58,9 @@
     <!-- actions opening views on models -->
 
     <record id="property_action_window" model="ir.actions.act_window">
-      <field name="name">Hotel </field>
-      <field name="res_model">property.property</field>
-      <field name="view_mode">tree,form</field>
+        <field name="name">Hotel </field>
+        <field name="res_model">property.property</field>
+        <field name="view_mode">tree,form</field>
     </record>
 
     <!-- ==========Main Menu========== -->
@@ -69,6 +69,24 @@
     <menuitem id="configuration_menu" name="Configuration"  parent="hotel_menu" sequence="10"/>
 
     <menuitem name="Hotel Configuration" id="property_configuration_menu" parent="configuration_menu" action="property_action_window" sequence="1"/>
+
+    <!-- ==========Building View========== -->
+
+    <record id="hotel_building_view_form" model="ir.ui.view">
+        <field name="name">Building</field>
+        <field name="model">hotel.building</field>
+        <field name="arch" type="xml">
+            <form String="Building">
+                <h2>Building Setup Form</h2>
+                <br></br>
+                <field name="building_code" placeholder="Code"/>
+                <field name="building_name"/>
+                <field name="building_type"/>
+                <field name="building_location"/>
+                <field name="building_description"/>
+            </form>
+        </field>
+    </record>
 
 
     
