@@ -24,7 +24,7 @@ class HotelRoom(models.Model):
     roomtypemap_code = fields.Char()
     roomview_id = fields.Many2one('hotel.roomview','Room View')
     roommap_code = fields.Char()
-    room_bedtype = fields.Char()
+    room_bedtype = fields.Many2one('hotel.bedtype','Bed Type')
     room_ratecode = fields.Char()
     room_facilitycode = fields.Char()
     room_size = fields.Char()
