@@ -129,12 +129,14 @@
             </field>
         </record>
 
-        <!-- ===========Room View Action========== -->
+        <!-- ===========Bed Type Action========== -->
         <record id="hotel_bedtype_action_window" model="ir.actions.act_window">
             <field name="name">Bed Type</field>
             <field name="res_model">hotel.bedtype</field>
             <field name="view_mode">tree,form</field>
         </record>
+
+        <menuitem id="bedtype_menu" name="Bed Type" parent="configuration_menu" action="hotel_bedtype_action_window"/>
 
 
 
