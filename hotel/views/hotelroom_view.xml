@@ -1,6 +1,6 @@
 <odoo>
     <data>
-
+        <!-- ==========Room Type View========== -->
         <record id="room_type_view_form" model="ir.ui.view">
             <field name="name">room.type.view</field>
             <field name="model">hotel.roomtype</field>
@@ -44,7 +44,6 @@
         </record>
 
         
-        <!-- <menuitem id="room_menu" name="Room" parent="configuration_menu" sequence="2"/> -->
         <menuitem id="room_type_config_menu" name="Room Type" parent="configuration_menu" action="room_type_action_window"/>
 
         <!-- =========hotel room========= -->
@@ -60,7 +59,7 @@
                         <group>
                             <field name="room_no"/>
                             <field name="roomtypemap_code"/>
-                            <field name="roomview_code" />
+                            <field name="roomview" />
                             <field name="roommap_code" />
                             <field name="room_bedtype"/>
                             <field name="room_ratecode" />
