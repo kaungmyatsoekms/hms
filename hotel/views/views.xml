@@ -77,13 +77,17 @@
         <field name="model">hotel.building</field>
         <field name="arch" type="xml">
             <form String="Building">
-                <h2>Building Setup Form</h2>
-                <br></br>
-                <field name="building_code" placeholder="Code" String="Building Code"/>
-                <field name="building_name" placeholder="Name" String="Building Name"/>
-                <field name="building_type" placeholder="Type" String="Building Type"/>
-                <field name="building_location" placeholder="Location" String="Location"/>
-                <field name="building_description" placeholder="Description" String="Description"/>
+                <sheet>
+                    <h2>Building Setup Form</h2>
+                    <br></br>
+                    <group>
+                        <field name="building_code" placeholder="Code" String="Building Code"/>
+                        <field name="building_name" placeholder="Name" String="Building Name"/>
+                        <field name="building_type" placeholder="Type" String="Building Type"/>
+                        <field name="building_location" placeholder="Location" String="Location"/>
+                        <field name="building_description" placeholder="Description" String="Description"/>
+                    </group>
+                </sheet>
             </form>
         </field>
     </record>
