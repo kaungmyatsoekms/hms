@@ -36,7 +36,7 @@ class HotelRoomView(models.Model):
     _description = 'hotel.roomview'
 
     roomview_code = fields.Char()
-    roomview_name = fields.One2many('hotel.room','roomview_id','View Name')
+    roomview_name = fields.Char()
     roomview_description = fields.Char()
 
 # class HotelRoomAmenitiesType(models.Model):
