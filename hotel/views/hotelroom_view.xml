@@ -136,7 +136,7 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem id="bedtype_menu" name="Bed Type" parent="configuration_menu" action="hotel_bedtype_action_window"/>
+        <!-- <menuitem id="bedtype_menu" name="Bed Type" parent="configuration_menu" action="hotel_bedtype_action_window"/> -->
 
 
 
