@@ -3,34 +3,6 @@
 from odoo import models, fields, api, tools
 
 
-
-
-
-
-# class HotelRoom(models.Model):
-#     _name = 'hotel.room'
-#     _description = 'hotel.room'
-
-#     room_no = fields.Char()
-#     roomtypemap_code = fields.Char()
-#     roomview_code = fields.Char()
-#     roommap_code = fields.Char()
-#     room_bedtype = fields.Char()
-#     room_ratecode = fields.Char()
-#     room_facilitycode = fields.Char()
-#     room_size = fields.Char()
-#     room_extension = fields.Char()
-#     room_image = fields.Binary()
-#     room_description = fields.Char()
-
-#     value2 = fields.Float(compute="_value_pc", store=True)
-#     description = fields.Text()
-#
-#     @api.depends('value')
-#     def _value_pc(self):
-#         for record in self:
-#             record.value2 = float(record.value) / 100
-
 class Property(models.Model):
     _name = 'property.property'
     _description = 'property.property'
@@ -53,3 +25,14 @@ class Property(models.Model):
     property_rating = fields.Char(string ='Property Rating')
     property_logo = fields.Binary(string='Logo')
     property_image = fields.Binary(string='Image')
+
+class HotelBuilding(models.Model):
+    _name = 'hotel.building'
+    _description = 'hotel.building'
+
+    building_code = fields.Char(string="Building Code", required=True)
+    building_name = fields.Char(string="Building Name", required=True)
+    building_type = fields.Char(string="Building Type", required=True)
+    building_location = fields.Char(string="Location", required=True)
+    building_description = fields.Char( string="Description", required=True)
+    
