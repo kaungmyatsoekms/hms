@@ -44,19 +44,17 @@ class HotelRoomView(models.Model):
 class HotelBedType(models.Model):
     _name = 'hotel.bedtype'
     _description = 'hotel.bedtype'
-    _rec_name = 'bedtype_name'
+    # _rec_name = 'bedtype_name'
     
     bedtype_code = fields.Char()
     bedtype_name = fields.Char(required=True)
     bed_size = fields.Char()
 
     # @api.multi
-    # def name_get(self, cr, uid, ids, context=None):
-    #     if not len(ids):
-    #         return []
-    #     res=[]
-    #     for bedtype_name in self.browser(cr,uid,ids,context=context)
-    #         res.append((bedtype_name.id,str(bedtype_name.bedtype_name.name)+""+str(bedtype_name.name)))
+    # def name_get(self):
+    #     result=[]
+    #     for record in self:
+    #          result.append('record.id','()')
     #     return res
 
         
