@@ -55,12 +55,29 @@
         </field>
     </record>
 
+    <record id="property_view_graph" model="ir.ui.view">
+        <field name="name">Property</field>
+        <field name="model">property.property</field>
+        <field name="arch" type="xml">
+            <graph>
+                <field name="name"/>
+                <field name="code"/>
+                <field name="address1"/>
+                <field name="address2"/>
+                <field name="address3"/>
+                <field name="city_id"/>
+                <field name="state_id"/>
+                <field name="country_id"/>
+            </graph>
+        </field>
+    </record>
+
     <!-- actions opening views on models -->
 
     <record id="property_action_window" model="ir.actions.act_window">
         <field name="name">Hotel </field>
         <field name="res_model">property.property</field>
-        <field name="view_mode">tree,form</field>
+        <field name="view_mode">graph,form</field>
     </record>
 
     <!-- ==========Main Menu========== -->
