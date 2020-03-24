@@ -15,12 +15,13 @@ class Property(models.Model):
     city_id = fields.Char(string='City')
     state_id = fields.Many2one('res.country.state', 'State', domain="[('country_id', '=', country_id)]")
     country_id = fields.Many2one('res.country', string='Country', required=True)
+    zip = fields.Char(string='Zip', change_default=True)
     phone = fields.Char(string='Phone')
     fax = fields.Char(string='Fax')
     email = fields.Char(string='Email')
     website = fields.Char(string='Website')
     sociallink = fields.Char(string='Social Media Link')
-    no_of_room = fields.Integer(string='Total Number of Rooms')
+    no_of_room = fields.Integer(string='Total Rooms')
     property_license = fields.Char(string='Property License')
     property_rating = fields.Selection(
         [('one','*'),
