@@ -35,6 +35,20 @@
             </field>
         </record>
 
+        <!-- ==========Room Type Tree View========== -->
+        <record id="room_type_view_tree" model="ir.ui.view">
+            <field name="name">room.type.tree</field>
+            <field name="model">hotel.roomtype</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="roomtype_rate"/>
+                    <field name="roomtype_bedqty"/>
+                    <field name="roomtype_totalroom"/>
+                    <field name="roomtype_description"/>
+                </tree>
+            </field>
+        </record>
+
         <!-- ==========Room Type Action============ -->
 
         <record id="room_type_action_window" model="ir.actions.act_window">
