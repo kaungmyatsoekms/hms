@@ -55,11 +55,11 @@
         </field>
     </record>
 
-    <record id="property_view_graph" model="ir.ui.view">
+    <record id="property_view_list" model="ir.ui.view">
         <field name="name">Property</field>
         <field name="model">property.property</field>
         <field name="arch" type="xml">
-            <graph>
+            <list>
                 <field name="name"/>
                 <field name="code"/>
                 <field name="address1"/>
@@ -68,7 +68,7 @@
                 <field name="city_id"/>
                 <field name="state_id"/>
                 <field name="country_id"/>
-            </graph>
+            </list>
         </field>
     </record>
 

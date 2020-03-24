@@ -23,11 +23,11 @@ class Property(models.Model):
     no_of_room = fields.Integer(string='Total Number of Rooms')
     property_license = fields.Char(string='Property License')
     property_rating = fields.Selection(
-        [('one','One Star'),
-         ('two','Two Star;'),
-         ('three','Three Star'),
-         ('four','Four Star'),
-         ('five','Five Star'),
+        [('one','*'),
+         ('two','**'),
+         ('three','***'),
+         ('four','****'),
+         ('five','*****'),
         ]
     )
     property_logo = fields.Binary(string='Logo')
