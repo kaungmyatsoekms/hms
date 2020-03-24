@@ -44,11 +44,15 @@ class HotelRoomView(models.Model):
 class HotelBedType(models.Model):
     _name = 'hotel.bedtype'
     _description = 'hotel.bedtype'
-    _rec_name = 'bedtype_name'
+    # _rec_name = 'bedtype_name'
     
     bedtype_code = fields.Char()
     bedtype_name = fields.Char(required=True)
     bed_size = fields.Char()
+
+    @api.multi
+    def name_get(self):
+        return [id,bedtype_code+bedtype_name]
 
 # class HotelRoomAmenitiesType(models.Model):
 #     _name = 'hotel.room.amenities.type'
