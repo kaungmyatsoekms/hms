@@ -41,8 +41,8 @@
             <field name="model">hotel.roomtype</field>
             <field name="arch" type="xml">
                 <tree>
-                    <field name="roomtype_code"/>
-                    <field name="roomtype_name"
+                    <!-- <field name="roomtype_code"/>
+                    <field name="roomtype_name" -->
                     <field name="roomtype_rate"/>
                     <field name="roomtype_bedqty"/>
                     <field name="roomtype_totalroom"/>
