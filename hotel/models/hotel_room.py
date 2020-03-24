@@ -51,17 +51,15 @@ class HotelBedType(models.Model):
     bed_size = fields.Char()
 
     @api.multi
-    def name_get(self):
+    def name_get(self, cr, uid, ids, context=None):
+        if not len(ids):
+            return []
+        res=[]
+        for bedtype_name in self.browser(cr,uid,ids,context=context)
+            res.append((bedtype_name.id,str(bedtype_name.bedtype_name.name)+""+str(bedtype_name.name)))
+        return res
 
-        data[]
-        for bed in self:
-            display = ''
-            display += bed.name or ""
-            display += ' ['
-            display += bed.code or ""
-            display += ']'
-            data.append((bed.id,display))
-        return data
+        
 
 # class HotelRoomAmenitiesType(models.Model):
 #     _name = 'hotel.room.amenities.type'
