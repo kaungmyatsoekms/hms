@@ -12,6 +12,11 @@
                     <br></br>
                     <field name="property_logo" placeholder="Logo" widget="image" class="oe_avatar"/>
                     <div class="oe_title">
+                        <!-- <field name="is_group" invisible="1"/>
+                        <field name="user_type" widget="radio"
+                            class="oe_edit_only"
+                            options="{'horizontal':True}"/>
+                        <br></br> -->
                         <label for="name" class="oe_edit_only"/>
                         <h2>
                             <field name="name"/>
@@ -24,9 +29,32 @@
                             <page>
                                 <group>
                                     <group>
-                                        <label for="address1" String = "Address"/>
+                                        <field name="phone"/>
+                                        <field name="fax"/>
+                                        <field name="email" widget="email" placeholder="name@gmail.com"/>
+                                        <field name="website" widget="url" placeholder="www.name.com"/>
+                                        <field name="sociallink" widget="url"/>
+                                    </group>
+                                    <group>
+                                        <field name="no_of_room"/>
+                                        <field name="property_rating"/>
+                                        <field name="property_image" widget="image" class="float-left oe_avatar"/>
+                                    </group>
+                                </group>
+                            </page>
+                        </notebook>
+                        <notebook clospan="4">
+                            <page string="License " autofocus="autofocus">
+                                <label for="property_license" String = "License Number"/>
+                                <group>
+                                    <field name="property_license" string="License Number" placeholder="License Number"/>
+                                </group>
+                            </page>
+                            <page string="Contacts &amp; Addresses" autofocus="autofocus">
+                                <group>
+                                    <label for="address1" String = "Address"/>
                                         <div class="o_address_format">
-                                            <field name="address1" placeholder="Street...." class="o_address_street"/>
+                                            <field name="address1" placeholder="Street...." class="o_address_street" style="width:100%"/>
                                             <field name="address2" placeholder="Street2..." class="o_address_street"/>
                                             <field name="address3" placeholder="Township" class="o_address_street"/>
                                             <field name="city_id" placeholder="City...  ." class="o_address_city"/>
@@ -34,19 +62,12 @@
                                             context="{'default_country_id': country_id}"/>
                                             <field name="country_id" placeholder="Country" class="o_address_country" option='{"no_open":True}'/>
                                             <field name="zip" placeholder="Zip" class="o_address_zip" context="{'default_country_id': country_id}"/>
-                                        </div> 
-                                        <field name="phone"/>
-                                        <field name="fax"/>
-                                        <field name="email"/>
-                                        <field name="website" widget="url"/>
-                                        <field name="sociallink" widget="url"/>
-                                    </group>
-                                    <group>
-                                        <field name="no_of_room"/>
-                                        <field name="property_license"/>
-                                        <field name="property_rating"/>
-                                        <field name="property_image" widget="image" class="float-left oe_avatar"/>
-                                    </group>
+                                        </div>
+                                </group>
+                            </page>
+                            <page string="Internal Notes" autofocus="autofocus">
+                                <group>
+                                    <field name="note" string="Note"/>
                                 </group>
                             </page>
                         </notebook>
@@ -56,11 +77,12 @@
         </field>
     </record>
 
-    <record id="property_view_list" model="ir.ui.view">
+    <record id="property_view_tree" model="ir.ui.view">
         <field name="name">Property</field>
         <field name="model">property.property</field>
         <field name="arch" type="xml">
             <tree>
+                <field name="property_logo" widget="image"/>
                 <field name="name"/>
                 <field name="code"/>
                 <field name="address1"/>
@@ -77,6 +99,7 @@
                 <field name="no_of_room"/>
                 <field name="property_license"/>
                 <field name="property_rating"/>
+                <field name="property_image" widget="image"/>
             </tree>
         </field>
     </record>
