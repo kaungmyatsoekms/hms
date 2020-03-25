@@ -60,7 +60,7 @@
         </record>
 
         
-        <menuitem id="room_type_config_menu" name="Room Type" parent="configuration_menu" action="room_type_action_window"/>
+        <menuitem id="room_type_config_menu" name="3.Room Type" parent="configuration_menu" action="room_type_action_window"/>
 
         <!-- =========Hotel Room View========= -->
         <record id="view_hotel_room_form" model="ir.ui.view" >
@@ -94,7 +94,7 @@
             <field name="view_mode">tree,form</field>
         </record>
 
-        <menuitem name="Room Configuration" id="hotel_room_menu" parent="configuration_menu" action="hotel_room_action_window" sequence="10"/>
+        <menuitem name="4.Room" id="hotel_room_menu" parent="configuration_menu" action="hotel_room_action_window" sequence="10"/>
 
         <!-- ===========Room View========== -->
         <record id="hotel_roomview_view_form" model="ir.ui.view">

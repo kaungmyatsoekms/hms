@@ -34,6 +34,8 @@ class Property(models.Model):
     note = fields.Text()
     property_logo = fields.Binary(string='Logo')
     property_image = fields.Binary(string='Image')
+    count = fields.Integer(string='Count')
+    number = fields.Integer(string='Number')
     # is_group = fields.Boolean(string="Is a Group", default=False,
     #     help="Check if the contact is a group, otherwise it is a hotel")
     # user_type = fields.Selection(string='User Type',

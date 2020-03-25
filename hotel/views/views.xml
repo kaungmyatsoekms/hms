@@ -11,6 +11,14 @@
                     <h2>Hotel Setup Form</h2>
                     <br></br>
                     <field name="property_logo" placeholder="Logo" widget="image" class="oe_avatar"/>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" icon="fa_user">
+                                <field string="Count" placeholder="Count" name="count" widget="stafinfo"/>
+                            </button>
+                            <button class="oe_stat_button" icon="fa_user">
+                                <field name="count" placeholder="Number" widget="stafinfo"/>
+                            </button>
+                        </div>
                     <div class="oe_title">
                         <!-- <field name="is_group" invisible="1"/>
                         <field name="user_type" widget="radio"
@@ -117,7 +125,7 @@
 
     <menuitem id="configuration_menu" name="Configuration"  parent="hotel_menu" sequence="10"/>
 
-    <menuitem name="Hotel Configuration" id="property_configuration_menu" parent="configuration_menu" action="property_action_window" sequence="1"/>
+    <menuitem name="1.Hotel" id="property_configuration_menu" parent="configuration_menu" action="property_action_window" sequence="1"/>
 
     <!-- ==========Building View========== -->
 
@@ -149,7 +157,7 @@
     </record>
 
     <!-- ==========Building Menu========== -->
-    <menuitem id="building_menu" name="Building" parent="configuration_menu" action="hotel_building_action_window"/>
+    <menuitem id="building_menu" name="2.Building" parent="configuration_menu" action="hotel_building_action_window"/>
 
 
     
