@@ -291,8 +291,8 @@ class Reservation(models.Model):
                     }))
                 self.update({'reservation_line_ids':vals})
 
-    def room_no_domain(self):
-        rsvn_line_objs = self.env['hms.reservation.line'].search()
+    # def room_no_domain(self):
+    #     rsvn_line_objs = self.env['hms.reservation.line'].search()
 
 # Reservation Line
 class ReservationLine(models.Model):
